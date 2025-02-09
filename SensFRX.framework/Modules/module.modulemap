@@ -1,0 +1,6 @@
+framework module SensFRX {
+  umbrella header "SensFRX.h"
+  export *
+
+  module * { export * }
+}
