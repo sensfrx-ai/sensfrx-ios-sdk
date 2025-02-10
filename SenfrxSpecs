@@ -1,0 +1,18 @@
+Pod::Spec.new do |s|
+  s.name         = "SensFRX"
+  s.version      = "1.0.0"
+  s.summary      = "A brief description of SensFRX SDK."
+  s.description  = "SensFRX SDK enhances security for iOS applications."
+  s.homepage     = "https://github.com/ashishchidhavaprof/sensfrx-ios-sdk"
+  s.license      = { :type => "Proprietary", :text => "Copyright 2025" }
+  s.author       = { "Sensfrx" => "info@sensfrx.ai" }
+  s.source       = { :git => "https://github.com/sensfrx-ai/sensfrx-ios-sdk", :tag => "#{s.version}" }
+  
+  s.platform     = :ios
+  s.ios.deployment_target = "12.0"
+  s.swift_version = "5.0"
+
+  s.vendored_frameworks = "SensFRX.framework"
+  s.source_files = "SensFRX.framework/Headers/*.h"
+  s.public_header_files = "SensFRX.framework/Headers/*.h"
+end
